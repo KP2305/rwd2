@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F2EFEA; /* Light Cream */
+    color: #232323; /* Dark Gray */
+}
+
+/* Header and Navigation */
+header {
+    background: #E7E2DE; /* Warm Gray */
+    color: #232323;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    background: #E7E2DE; /* Matches header */
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #232323;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: #5C5C5C; /* Slightly darker gray */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px;
+    background: #EDE0D3; /* Beige background */
+    color: #232323;
+    animation: fadeIn 2s ease-in-out;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Features & Services */
+.features, .services, .about {
+    text-align: center;
+    padding: 30px;
+}
+
+.features ul, .services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li, .services li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: white;
+    background: #232323; /* Deep Charcoal */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out, transform 0.2s;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    background: #EDE0D3; /* Light Beige */
+    color: #232323;
+    transform: scale(1.05);
+}
+
+/* Email Link */
+.email-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #232323;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for email */
+.email-link:hover {
+    color: #5C5C5C;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #E7E2DE;
+    color: #232323;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+/* Responsive Navigation Menu */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        display: block;
+        margin: 0 15px;
+    }
+}
+
+/* Ensure navigation remains in a row even on smaller screens */
+@media (max-width: 480px) {
+    nav ul {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .hero {
+        padding: 20px;
+    }
+    .features li, .services li {
+        font-size: 1rem;
+    }
+}
